@@ -1,0 +1,16 @@
+{% include header.html %}
+  <div class="blog-page">
+  	<div class="container">
+		  <div class="row">
+		    <div class="post col-sm-8">
+		    	<h2 class="blog-post-title">{{ page.title }}</h2>
+			    <p class="blog-post-meta"><a type="button" class="btn btn-danger" href="blog-post-link"># Comments</a>{{ page.date | date_to_long_string }}</p>
+		      {{content}}
+		    </div>
+		    <div class="col-sm-4 blog-sidebar">
+		      {% include sidebar.html %}
+		    </div>
+		  </div>
+	  </div>
+  </div>
+{% include footer.html %}
