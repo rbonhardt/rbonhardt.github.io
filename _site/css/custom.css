@@ -306,6 +306,10 @@ a {
 
 /* About Page */
 
+.navbar-home .container {
+  max-width: 778px;
+}
+
 #about {
   margin-top: 40px;
   margin-bottom: 40px;
@@ -343,7 +347,7 @@ a {
 }
 
 #about p {
-  padding: 20px 0;
+  margin: 20px 0;
 }
 
 #about p.inner {
