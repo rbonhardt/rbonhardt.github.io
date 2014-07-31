@@ -1,61 +1,36 @@
 ---
 
-layout: default
+layout: home
 
 ---
 
-{% for post in paginator.posts %}
+  <div class="page">
+    <div class="container">
 
-<div class="blog-post">
-    <h2 class="blog-post-title"><a href="{{post.url}}">{{post.title}}</a></h2>
-    <p class="blog-post-meta"><a type="button" class="btn btn-danger" href="blog-post-link"># Comments</a> {{ post.date | date_to_long_string }} </p>
+      <div class="row">
 
-    {% if post.content contains '<!--more-->' %}
-    
-	    {{ post.content | split:'<!--more-->' | first }}
-	    
-	    <a href="{{ post.url }}">Read More</a>
+        <div id="about" class="col-md-10 col-md-offset-1 blog-main">
 
-	{% else %}
+        	<div id="about-top">
+  	        <img id="ryan-img" src="/images/ryan-hat.png" alt="Ryan">
+  	        <h1>I want to improve education</h1>
+  	        <p>I am the founder of MASSIVE Academy and Online Director for Miles 2 Give. I have a strong passion for improving education, and have a dream that one day every one will have the chance to learn how to code and build things online. </p>
+          </div>
+          <h2 class="clear">More About Me</h2>
+          <blockquote>“I get up every morning determined to both change the world and have one hell of a good time.  Sometimes this makes planning my day difficult. – E. B. White"</blockquote>
+          <p>During college I decided to avoid "Corporate America", work my dream jobs and live life as I wanted to. In the beginning it was rough and I STRUGGLED….but then I discovered simple tricks to promote myself and how to learn skills rapidly. Since then I’ve founded MASSIVE Academy, helped found a non-profit running across the USA for Sarcoma cancer research, lived in 10 cities, been a white water river guide, surfed across Latin America, and advised multiple small businesses. My goal is to always love what I’m doing and do what I love - to learn something new and add value daily.</p>
+          <p class="center"><img src="/images/teaching-kids.jpg" alt="Teaching Kids"></p>
+          <h2>MASSIVE Academy</h2>
+          <p>At MASSIVE Academy we aim to improve education and dream to give every kid a chance to learn how to code and be successful online.</p> 
+          <p class="inner">To improve education we focus on both material and method. In terms of material we believe that every day the world around us and the business landscape change faster than education is able to.  This results in a growing gap between what students are and should be learning. We try to diminish this gap by teaching students skills that matter. In terms of method, all of our courses follow a skill acquisition model where the students learn by doing as they work towards a clear cut goal that they achieve by completing a project. We don't believe in tests and subjective assessments, but creating things and objective measurements of learning.</p>
+          <p>We also are working in Tallahassee to bring coding into the school system and learning culture through <a href="http://www.onemillionlines.com" target="_blank">One Million Lines</a>.</p>
+          <p class="center"><img src="/images/miles2give.jpg" alt="Miles 2 Give"></p>
+          <h2>Miles 2 Give</h2>
+          <p><a href="http://www.miles2give.org" target="_blank">Miles 2 Give</a> is a 501c3 Non-Profit organization that raises funding for sarcoma cancer research by running unprecedented team routes worldwide. We believe we are in a Generation Of A Cure. This 2013 tour our road team ran from San Francisco, CA to Ocean City, MD raising over $103,000 for research.  For the next tour we have partnered with Huntsman Cancer Institute to give them direct distribution for research of all funds raised and we will be aiming to raise $500,000 while running 10,000 miles counter-clockwise around the United State of America.  AMAZING.</p>
 
-	    {{ post.content }}
-	    
-	{% endif %}
+        </div>
+
+      </div><!-- /.row -->
+
+    </div><!-- /.container -->
   </div>
-
-{% endfor %}
-
-<div class="row">
-	<div class="col-md-12">
-  	<div class="pagination">
-    <ul>
-      {% if paginator.previous_page %}
-        {% if paginator.previous_page == 1 %}
-        <li><a href="/">Prev</a></li>
-        {% else %}
-        <li><a href="/page{{ paginator.previous_page }}">Prev</a></li>
-        {% endif %}
-      {% else %}
-      <li><span class="disabled">Prev</span></li>
-      {% endif %}
-      {% if paginator.page == 1 %}
-      <li><span class="active">1</span></li>
-      {% else %}
-      <li><a href="/">1</a></li>
-      {% endif %}
-      {% for count in (2..paginator.total_pages) %}
-        {% if count == paginator.page %}
-        <li><span class="active">{{ count }}</span></li>
-        {% else %}
-        <li><a href="/page{{ count }}">{{ count }}</a></li>
-        {% endif %}
-      {% endfor %}
-      {% if paginator.next_page %}
-      <li><a href="/page{{ paginator.next_page }}">Next</a></li>
-      {% else %}
-      <li><span class="disabled">Next</span></li>
-      {% endif %}
-    </ul>
-    </div>
-  </div>
-</div>

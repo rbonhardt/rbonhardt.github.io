@@ -3,7 +3,7 @@
  */
 
 body {
-  font-family: 'Open Sans', "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: 'courier new', courier, sans-serif;
   color: #555;
   font-weight: 300;
 }
@@ -84,6 +84,16 @@ a {
 
 .navbar-default .navbar-nav>.active>a, .navbar-default .navbar-nav>.active>a:hover, .navbar-default .navbar-nav>.active>a:focus {
   background-color: #f8f8f8;
+}
+
+.navbar p {
+  text-align: center;
+  font-weight: 300;
+  text-rendering: optimizeLegibility;
+  letter-spacing: .3px;
+  font-size: 20px;
+  color: #888;
+  padding-top: 14px;
 }
 
 /* Blog page */
