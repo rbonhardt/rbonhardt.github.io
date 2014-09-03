@@ -60,16 +60,20 @@ $(document).ready(function(){
   			$('#feedback').text("You've already won. Click +New Game to start over.");
   		}
   		else {
-	  		// assign value of userGuess to numGuessed
+  			// assign value of userGuess to numGuessed
 	  		var numGuessed = $('#userGuess').val();
-	  		// add numGuessed to li in guessList
-	  		$('#guessList').append("<li>" + numGuessed + "</li>");
-	  		// increment count by 1
-	  		numGuesses ++;
-	  		// update count
-	  		$('#count').text(numGuesses);
-	  		// call compare function
-	  		compare(+numGuessed, secretNum);
+  			if ( +numGuessed >= 1 && +numGuessed <= 100) {
+		  		// add numGuessed to li in guessList
+		  		$('#guessList').append("<li>" + numGuessed + "</li>");
+		  		// increment count by 1
+		  		numGuesses ++;
+		  		// update count
+		  		$('#count').text(numGuesses);
+		  		// call compare function
+		  		compare(+numGuessed, secretNum);
+  			} else {
+  				$('#feedback').text("Please enter a number between 1 and 100.");
+  			};
 	  	};
 	  	// reset userGuess
   		$('#userGuess').val('');
