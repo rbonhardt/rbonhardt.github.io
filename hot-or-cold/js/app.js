@@ -70,9 +70,9 @@ $(document).ready(function(){
 	  		$('#count').text(numGuesses);
 	  		// call compare function
 	  		compare(+numGuessed, secretNum);
-	  		// reset userGuess
-	  		$('#userGuess').val('');
 	  	};
+	  	// reset userGuess
+  		$('#userGuess').val('');
   	});
 
 
