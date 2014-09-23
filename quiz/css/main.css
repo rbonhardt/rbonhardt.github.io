@@ -105,6 +105,10 @@ input:focus, input:hover, input:active {
 	padding-right: 1%;
 }
 
+.checkout button, .reset  {
+	display: none;
+}
+
 button {
 	font-size: 20px;
 	border: none;
@@ -117,6 +121,10 @@ button {
 
 button:hover {
 	font-weight: 600;
+}
+
+.answers {
+	display: none;
 }
 
 .list fieldset button {
@@ -163,6 +171,16 @@ button:hover {
 	color: #fefefe;
 }
 
+.list li.wrong {
+	background-color: rgba(247, 76, 60, .3);
+	color: #fefefe;
+}
+
+.list li.correct {
+	background-color: rgba(46, 204, 113, .3);
+	color: #fefefe;
+}
+
 #update {
 	position: absolute;
 	top: 5%;
@@ -176,7 +194,7 @@ button:hover {
 	font-weight: 900;
 }
 
-.checkout {
+.checkout, .reset {
 	text-align: center;
 	padding: 10px;
 }
