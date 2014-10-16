@@ -50,6 +50,22 @@ body {
 	height: 50px;
 }
 
+.info {
+	display:none;
+}
+
+.marker:hover .info {
+	display: block;
+	max-width: 200px;
+	margin-top: 5px;
+	color: #555;
+	padding:2px;
+}
+
+.info p {
+	margin-bottom: 5px;
+}
+
 .arrow-down {
 	width: 0; 
 	height: 0; 
