@@ -16,10 +16,15 @@ function toScreen(photos){
     setTimeout( function(){ 
     
       if (photo.location != null) {
-        var image = "<img src='"+ photo.images.low_resolution.url + "' />";
         var link = photo.link;
         var lat = photo.location.latitude;
         var lon = photo.location.longitude;
+        var likes = photo.likes.count;
+        var height = 30 + likes;
+        var width = 30 + likes;
+        var style = "style='height: " + height + "px; width: " + width + "px;'"
+        var image = "<img src='"+ photo.images.low_resolution.url + "' "+style+"/>";
+        console.log(likes, style);
 
         var marker_photo_index = new RichMarker({
           position: new google.maps.LatLng(lat, lon),
@@ -36,8 +41,6 @@ function toScreen(photos){
 
   });
 
-  console.log(photos.pagination.next_max_tag_id);
-  console.log(url + "&max_tag_id=" + photos.pagination.next_max_tag_id);
   url = url + "&max_tag_id=" + photos.pagination.next_max_tag_id;
 }
 

@@ -36,13 +36,13 @@ body {
 
 .marker:hover {
 	z-index: 9999;
-	margin-top: -150px;
-	margin-left: -75px;
+	margin-top: -150px !important;
+	margin-left: -75px !important;
 }
 
 .marker:hover img {
-	width: 200px;
-	height: 200px;
+	width: 200px !important;
+	height: 200px !important;
 }
 
 .marker img {
