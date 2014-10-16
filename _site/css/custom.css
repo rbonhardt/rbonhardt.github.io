@@ -37,6 +37,8 @@ a, a:hover {
  * Override Bootstrap's default container.
  */
 
+ /*-- to change: masonry and onemonthrails masonry*/
+
 @media (min-width: 1200px) {
   .container {
     width: 970px;
