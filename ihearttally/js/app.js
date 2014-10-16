@@ -5,7 +5,7 @@ function toScreen(photos){
 
   var time = 300;
 
-  console.log(photos.data);
+  //console.log(photos.data);
 
   $.each(photos.data, function(index, photo){
 
@@ -20,18 +20,18 @@ function toScreen(photos){
         var lat = photo.location.latitude;
         var lon = photo.location.longitude;
         var likes = photo.likes.count;
-        var height = 30 + likes;
-        var width = 30 + likes;
-        var style = "style='height: " + height + "px; width: " + width + "px;'"
-        var image = "<img src='"+ photo.images.low_resolution.url + "' "+style+"/>";
-        console.log(likes, style);
+        //var height = 30 + likes;
+        //var width = 30 + likes;
+        //var style = "style='height: " + height + "px; width: " + width + "px;'"
+        var image = "<img src='"+ photo.images.low_resolution.url + "'/>";
+        // console.log(likes, style);
 
         var marker_photo_index = new RichMarker({
           position: new google.maps.LatLng(lat, lon),
           map: map,
           anchor: RichMarkerPosition.BOTTOM,
           animation: google.maps.Animation.DROP,
-          content: "<a href='" + link + "' target='_blank'><div class='marker'>"+ image +"<div class='arrow-down'></div></div></a>"
+          content: "<a href='" + link + "' target='_blank'><div class='marker'>"+ image +"<div class='arrow-down'></div><div class='info'><p>5 likes</p><p>Peace. #tallahassee #capital #IHeartTally</p></div></div></a>"
           });
       } 
 
