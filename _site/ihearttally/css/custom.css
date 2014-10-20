@@ -3,6 +3,7 @@ html, body, #map-canvas { height: 100%; margin: 0; padding: 0;}
 body {
 	font-family: 'Open Sans', inherit;
 	margin-top: 50px;
+	font-weight: 300;
 }
 
 .navbar-default .navbar-brand {
@@ -56,14 +57,21 @@ body {
 
 .marker:hover .info {
 	display: block;
-	max-width: 200px;
+	width: 200px;
 	margin-top: 5px;
 	color: #555;
-	padding:2px;
+	padding: 5px;
+	position: absolute;
+	bottom: 3px;
+	color: #fefefe;
+	font-size: 11px;
+	background-color: rgba(0,0,0,.5);
 }
 
 .info p {
 	margin-bottom: 5px;
+	font-family: 'Open Sans', inherit;
+	font-weight: 300;
 }
 
 .arrow-down {
