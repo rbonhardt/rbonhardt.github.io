@@ -107,14 +107,67 @@ a, a:hover {
 }
 
 /* Home Page */
-.top img {
-  width: 101%;
-  margin-top: -1px;
+.top {
+  background: url('../images/hero-bg-dark.jpg') center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  background-size: cover;
+  font-family: 'Lato', "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+.top h1 {
+  color: #2ec371;
+  font-weight: 800;
+}
+
+.top h1 span {
+  color: #fefefe;
+  font-weight: 100;
+}
+
+.top h2 {
+  line-height: 1.2em;
+  font-weight: 200;
+  color: #cecece;
 }
 
 .links {
   text-align: center;
   margin-top: 50px;
+}
+
+.now {
+  text-align: center;
+  padding: 40px 0;
+  text-align: center;
+  background-color: #f9f9f9;
+  border-top: 1px solid #e5e5e5;
+  border-bottom: 1px solid #e5e5e5;
+}
+
+.now img {
+  max-height: 150px;
+  border-radius: 10px;
+}
+
+.now h2 {
+  font-weight: 600;
+  font-size: 32px;
+  margin-bottom: 50px;
+}
+
+.now h3 {
+  padding-top: 20px;
+  padding-bottom: 10px;
+}
+
+.now .col-sm-6 {
+  padding: 30px;
+  background-color: #fefefe;
+  border: 1px solid #ececec;
+  width: 46%;
+  margin: 2%;
 }
 
 /* Blog page */
