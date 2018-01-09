@@ -30,6 +30,7 @@ h2 {
 
 a, a:hover {
   color: #2ecc71;
+  text-decoration: none;
 }
 
 
@@ -104,6 +105,60 @@ a, a:hover {
   font-size: 20px;
   color: #888;
   padding-top: 16px;
+}
+
+/* Announcement */
+
+.grey {
+    background: #FAFAFA;
+    border-top: 1px solid #E0E0E0;
+    border-bottom: 1px solid #E0E0E0;
+}
+
+.copy {
+  margin-bottom: 15px;
+  margin-top: 15px;
+}
+
+h3.copy {
+    font-size: 14px;
+    color: #4A4A4A;
+    line-height: 20px;
+    letter-spacing: 0px;
+    font-weight: 300;
+}
+
+.copy .button {
+  display: inline-block;
+  padding: 6px 10px;
+  background: rgba(46, 204, 113, 1);
+  color: #fff;
+  line-height: 1;
+  border-radius: 3px;
+  -o-border-radius: 3px;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  font-size: 11px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  margin-right: 10px;
+  vertical-align: bottom;
+}
+
+.green .copy .button {
+  background: #fefefe;
+  color: rgba(46, 204, 113, 1);
+  border-top: 1px solid rgba(46, 204, 113, 1);
+}
+
+.copy a:hover  {
+  color: #fefefe;
+}
+
+.link {
+  color: #7cc576;
+  font-weight: 500;
+  margin-left: 5px;
 }
 
 /* Home Page */
