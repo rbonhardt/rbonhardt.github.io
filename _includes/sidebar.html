@@ -1,25 +1,35 @@
-<div id="subscribe-box" class="sidebar-module sidebar-module-inset">
-  <h4>Like what you're reading? Go VIP.</h4>
-  <p>Join today to receive instant updates, free learning resources, and a bunch of other awesome stuff. Oh by the way, I hate spame so don't worry about receiving any of that from me.</p>
-  <form role="form" action="http://ryanbonhardt.us7.list-manage1.com/subscribe/post?u=788b0ac7b2307b32558ac56d7&amp;id=98fe6b3e56" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
-    <div class="form-group">
-      <input type="email" value="" name="EMAIL" class="form-control" id="mce-EMAIL" placeholder="Enter email">
+<div class="sidebar">
+  <div class="container sidebar-sticky">
+    <div class="sidebar-about">
+      <h1>
+        <a href="{{ site.baseurl }}">
+          Ryan Bonhardt
+        </a>
+      </h1>
+      <p class="lead">My aim is to be a world class teacher and learner.</p>
     </div>
-    <div id="mce-responses" class="clear">
-      <div class="response" id="mce-error-response" style="display:none"></div>
-      <div class="response" id="mce-success-response" style="display:none"></div>
-    </div>    <!-- real people should not fill this in and expect good things - do not remove this or risk form bot signups-->
-    <div style="position: absolute; left: -5000px;"><input type="text" name="b_788b0ac7b2307b32558ac56d7_98fe6b3e56" tabindex="-1" value=""></div>
-    <p class="center"><input type="submit" value="Join For Free" name="subscribe" class="btn btn-warning"></p>
-  </form>
-</div>
 
+    <nav class="sidebar-nav">
+      <a class="sidebar-nav-item{% if page.url == site.baseurl %} active{% endif %}" href="#home">Home</a>
+      <!--
+      {% comment %}
+        The code below dynamically generates a sidebar nav of pages with
+        `layout: page` in the front-matter. See readme for usage.
+      {% endcomment %}
 
-<div id="posts-box" class="sidebar-module">
-  <h4>Most Popular Posts</h4>
-  <ol>
-  {% for post in site.posts %}
-    <li><a href="{{post.url}}">{{post.title}}</a></li>
-  {% endfor %}
-  </ol>
+      {% assign pages_list = site.pages %}
+      {% for node in pages_list %}
+        {% if node.title != null %}
+          {% if node.layout == "page" %}
+            <a class="sidebar-nav-item{% if page.url == node.url %} active{% endif %}" href="{{ node.url }}">{{ node.title }}</a>
+          {% endif %}
+        {% endif %}
+      {% endfor %}-->
+
+      <a class="sidebar-nav-item" href="#past-projects">Past Projects</a>
+      <a class="sidebar-nav-item" href="#past-talks">Talks</a>
+      <a class="sidebar-nav-item" target="_blank" href="https://medium.com/@ryanbonhardt">Writings</a>
+      <a class="sidebar-nav-item" target="_blank" href="mailto:rbonhardt@gmail.com">Contact Me</a>
+    </nav>
+  </div>
 </div>

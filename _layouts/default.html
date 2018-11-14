@@ -1,14 +1,15 @@
-{% include header.html %}
-  <div class="blog-page">
-    <div class="container">
-		  <div class="row">
-		    <div class="col-sm-8 blog-main">
-		      {{content}}
-		    </div>
-		    <div class="col-sm-4 blog-sidebar">
-		      {% include sidebar.html %}
-		    </div>
-		  </div>
-		</div>
-	</div>
-{% include footer.html %}
+<!DOCTYPE html>
+<html lang="en-us">
+
+  {% include head.html %}
+
+  <body class="theme-base-0c">
+
+    {% include sidebar.html %}
+
+    <div class="content container">
+      {{ content }}
+    </div>
+
+  </body>
+</html>

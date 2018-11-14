@@ -1,10 +1,26 @@
-name: "Ryan Bonhardt"
-description: "I’m the founder at Maker-Based Education where we’re working to help schools bridge the gap between what students should be and are learning. I have a dream that one day every student will have the chance to learn skills (both hard and soft) that will equip them to be powerful in the real world."
+# Dependencies
+markdown:         redcarpet
+# highlighter:      pygments
 
-url: "http://ryanbonhardt.com"
+# Permalinks
+permalink:        pretty
+#relative_permalinks: true
 
-paginate: 5
+# Setup
+title:            Ryan Bonhardt
+tagline:          'Past work, talks, and writings'
+description:      'If this is your first time here, this site hosts all of my past work, projects, talks and writings on my exploration of psychology, self-education, health, and improving your self in general.'
+url:              http://ryanbonhardt.com
+baseurl:          /
 
-markdown: rdiscount
-permalink: pretty
-pygments: true
+author:
+  name:           'Ryan Bonhardt'
+  url:            http://www.ryanbonhardt.com/
+
+paginate:         5
+
+# Custom vars
+version:          2.1.0
+
+# github:
+#  repo:           https://github.com/poole/hyde
