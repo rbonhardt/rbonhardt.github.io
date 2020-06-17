@@ -3,6 +3,10 @@ html {
 	scroll-behavior: smooth;
 }
 
+h3 {
+    font-size: 1rem;
+}
+
 p, .message {
 	font-size: 18px;
 }
