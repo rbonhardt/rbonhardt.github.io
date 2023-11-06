@@ -3,35 +3,173 @@ layout: default
 title: Home
 ---
 
-<div class="posts">
-  {% for post in paginator.posts %}
-  <div class="post">
-    <h1 class="post-title">
-      <a href="{{ post.url }}">
-        {{ post.title }}
-      </a>
-    </h1>
+<div id="home">
+  <div class="header">
+    <h1 class="home-title">Hi, I'm Ryan</h1>
 
-    <span class="post-date">{{ post.date | date_to_string }}</span>
+    <p>My goal is to become a National Championship winning coach at the collegiate level. I think it's important to have goals that will make you become the best vesion of your future self. I'm currently looking for an opportunity in the college level to learn and grow under a mentor while providing him or her value as an Assistant Coach or Director of Operations.</p>
 
-    {{ post.content }}
+    <p>In the past I've helped build <a target="_blank" data-cke-saved-href="https://www.thebigbiemethod.com/" href="https://www.thebigbiemethod.com/">The Bigbie Method</a> where we teach people to create connection through their communication, even in times of conflict, been the 6th hire and Head of Education for one of the fastest growing edtech companies <a target="_blank" data-cke-saved-href="http://teachable.com" href="http://teachable.com">Teachable</a> - which was <a target="_blank" data-cke-saved-href="https://www.alleywatch.com/2020/03/teachable-acquired-by-hotmart-as-the-online-class-market-consolidates/" href="https://www.alleywatch.com/2020/03/teachable-acquired-by-hotmart-as-the-online-class-market-consolidates/">acquired by Hotmart for $250 Million</a>, worked and consulted with best-selling authors, Y-Combinator startups and Fortune 500 businesses to create courses, worked with and trained athletes from youth to the college and professional levels, helped raise $300,000+ for Sarcoma cancer research with a group of friends running across the US, operated bars and nightclubs, and produced some <a target="_blank" data-cke-saved-href="https://www.udemy.com/user/ryanbonhardt/" href="https://www.udemy.com/user/ryanbonhardt/">courses</a> of my own courses that have been taken by over 200,000 students worldwide.</p>
   </div>
-  {% endfor %}
+
+  <div id="worked-with">
+    <h2>I've been lucky enough to work with...</h2>
+    <div class="worked-with-images">
+      <a target="_blank" href="https://titushp.com/"><img class="small" src="images/titus-blue.jpeg" alt="Titus Human Performance" title="Titus Human Performance"></a>
+      <a target="_blank" href="https://charliehoehn.com/"><img class="small" src="images/charlie.jpeg" alt="Charlie Hoehn" title="Charlie Hoehn"></a>
+      <a target="_blank" href="https://teachable.com/"><img class="small" src="images/teachable-png.png" alt="Teachable" title="Teachable"></a>
+      <a target="_blank" href="https://globalhappiness.org/"><img class="small" src="images/neil.jpg" alt="Neil Pasricha" title="Neil Pasricha"></a>
+      <a target="_blank" href="https://www.bloomintelligence.com/"><img class="small" src="images/bloom.jpg" alt="Bloom Intelligence" title="Bloom Intelligence"></a>
+      <a target="_blank" href="https://expinstitute.com/"><img class="small" src="images/exp-institute.jpg" alt="Experience Institute" title="Experience Institute"></a>
+    </div>
+  </div>
 </div>
 
-<div class="pagination">
-  {% if paginator.next_page %}
-    <a class="pagination-item older" href="{{ site.baseurl }}page{{paginator.next_page}}">Older</a>
-  {% else %}
-    <span class="pagination-item older">Older</span>
-  {% endif %}
-  {% if paginator.previous_page %}
-    {% if paginator.page == 2 %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}">Newer</a>
-    {% else %}
-      <a class="pagination-item newer" href="{{ site.baseurl }}page{{paginator.previous_page}}">Newer</a>
-    {% endif %}
-  {% else %}
-    <span class="pagination-item newer">Newer</span>
-  {% endif %}
+<div id="intro">
+  <p>This site is a collection of my past work, <a href="#past-projects">projects</a> and <a href="#past-talks">talks</a> I've done. Sometimes <a target="_blank" data-cke-saved-href="https://medium.com/@ryanbonhardt" href="https://medium.com/@ryanbonhardt">I write on Medium</a> about whatever gets me excited, and you can learn html and css from me <a target="_blank" data-cke-saved-href="https://www.udemy.com/build-your-first-website-in-1-week/" href="https://www.udemy.com/build-your-first-website-in-1-week/">here</a> for free.</p>
+</div>
+
+<div id="past-projects">
+
+  <h2>A Somewhat Quick Work Bio</h2>
+
+  <h3>Main Street Entertainment and Iconic Corners</h3>
+  <p>While taking a hiatus from the Tech and Startup Industry I tested how I could bring my tech background into brick and mortar businesses and went back to my roots in the Food and Beverage and Hospitality industries. Mainstreet Entertainment and Iconic Corners Management groups have a portfolio of 3 restaurants and nightlife venues in Tallahassee, FL. My main focus was with Potbelly's. In the 16 months I was there we increased revenue from previous years 66%, hired over 100 people, brought in a permanent food vendor, created automated systems to make the place easier to run, been awarded one of the top 8 college bars in the US by Barstool, and brought in such big name acts as Steve Aoki, Chase Rice, and YBN Cordae, among others.</p>
+
+  <h3>Santa Stumble</h3>
+  <p>During my time at MSE and IC I brought together 3 of Tallahassee's most iconic venues and multiple promotional groups to create this annual December bar crawl to raise money for Salvation Army's Angel Tree Program. In 2019, we raised over $20,000, 100% of the proceeds provided gifts for hundreds of kids in need through out the Big Bend area.</p>
+
+  <h3><a target="_blank" href="https://titushp.com/">Titus Human Performance</a></h3>
+  <p>Headed up the redesign of the UI/UX for the SPEAR system, a human and economic performance optimization (HEPO) platform that large programs, including the entire SOCOM use. At it's core it tracks different outputs/inputs for an individual - what they eat, workouts, blood reports, dna reports, sleep patterns, performance tests, cognitive tests, wearable tech, injuries - and uses AI and Machine Learning to find causation and correlation and determine ultimately what it takes for each individual to keep them performing at their best.
+
+  Also was fortunate enough to learn from professional and Olympic coaches  and train local athletes.</p>
+
+  <h3><a target="_blank" href="https://www.bloomintelligence.com/">Bloom Intelligence</a></h3>
+  <p>A brick and mortar analytics business. They use WiFi in businesses to track key metrics of customers' behavior patterns that were previously only available to e-commerce companies. I was in charge of creating an automated system for the delivery and install of our WiFi equipment, client relationships and onboarding new clients, creating an automated onboarding application that they can revisit, and redesigning the UI/UX of the WiFi registration page for our clients' customers.</p>
+
+  <h3><a target="_blank" href="https://teachable.com/">Teachable</a></h3>
+  <p>An online education startup that was acquired by Hotmart in March 2020 for around $250 million according to <a href="https://techcrunch.com/2020/03/16/edtech-notches-a-win-as-teachable-is-acquired-by-hotmart/" target="_blank">TechCrunch</a>. I was one of the first 6 hired employees. My responsibilities included running the webinars for both acquiring and training new customers, reaching out to potential high value clients and creating courses with them, and creating courses to teach people how to be successful teaching online.</p>
+
+  <h3><a href="https://www.makerbased.com/" target="_blank">Maker-Based Education</a></h3>
+  <p>I founded Maker-Based Education in 2014 to teach people how to build websites in less than 20 hours. The courses have become best-sellers on Udemy and instituded as curriculum in schools across North Florida. Over 200,000 people have taken my courses on HTML and CSS with an average 5 star review at time of the last update.</p>
+
+  <h3>One Million Lines</h3>
+  <p>While working on Maker-Based Education we created One Million Lines to challenge ourselves and the Leon County School System to get coding education into the curriculum and have their students write over 1 million lines of code. The movement lead to our curriculum being taught in various schools through the Big Bend area.</p>
+
+  <h3><a href="https://www.landon-gallant.com/miles-2-give" target="_blank">Miles 2 Give</a></h3>
+  <p>Founded by Landon Cooper, Miles 2 Give was a 3 man team that ran from San Francisco to Ocean City, MD and raised over $206,000 for Sarcoma Cancer research and awareness. I was in charge of all e-commerce and online operations, setting up partnerships, meetups and fundraising events, creating apparel, and running with them for the last quarter of the trip. This is the project I'm most grateful and proud to be a part. Not really because of the money, but because of the impact we had and the relationships we formed.</p>
+
+  <h3>I also..</h3>
+  am a former D1 Soccer Player, have been a whitewater river guide, and have worked in the Hospitality and Food and Beverage industry for 20 years.
+
+  <h2>Courses I've Created</h2>
+  <div class="projects">
+    <a class="no-underline" target="_blank" href="http://www.makerbased.com/">
+      <div class="project">
+        <div class="overlay-container">
+          <img class="large" src="images/maker-based.jpg" alt="Maker-Based Education" title="Maker-Based Education">
+          <p class="description">A collection of courses I created to teach people different coding languages in less than a month. Taught online and in schools.</p>
+        </div>
+        <p class="lead">Maker-Based Education</p>
+      </div>
+    </a>
+    <a class="no-underline" target="_blank" href="https://rpg.usefedora.com/">
+      <div class="project">
+        <div class="overlay-container">
+          <img class="large" src="images/charlie-course.jpg" alt="Land A Job You love" title="Land A Job You love">
+          <p class="description">A course I created with Charlie Hoehn to teach people how to find and get the job they want with people they previously didn't know.</p>
+        </div>
+        <p class="lead">Land A Job You Love</p>
+      </div>
+    </a>
+    <a class="no-underline" target="_blank" href="https://courses.globalhappiness.org/">
+      <div class="project">
+        <div class="overlay-container">
+          <img class="large" src="images/neil-course.jpg" alt="Developing The Habit Of Seeing Awesome" title="Developing The Habit Of Seeing Awesome">
+          <p class="description">A course I created with best-selling author Neil Pasricha as a complement to his book The Happiness Equation.</p>
+        </div>
+        <p class="lead">The Habit Of Seeing Awesome</p>
+      </div>
+    </a>
+    <a class="no-underline" target="_blank" href="https://moneycoachuniversity.com/">
+      <div class="project">
+        <div class="overlay-container">
+          <img class="large" src="images/money-coach.jpg" alt="Money Coach University" title="Money Coach University">
+          <p class="description">I worked with the Money Coach team to redesign their site and build a growth plan to funnel their subscribers into their courses.</p>
+        </div>
+        <p class="lead">Money Coach University</p>
+      </div>
+    </a>
+  </div>
+
+  <p>To see a detailed timeline of my work experience click <a target="_blank" data-cke-saved-href="https://www.linkedin.com/in/ryanbonhardt/" href="https://www.linkedin.com/in/ryanbonhardt/">here</a>.</p>
+</div>
+
+<div id="testimonials">
+  <h2>Here's what people have said about my courses...</h3>
+
+  <div class="message">
+    I really like this course!!! I would rank this course in the top three of all courses that I've taken. Ryan is very knowledgeable and has keen insight on HTML and CSS. I also found the instructor easy to follow and understand. Gr8 course, Ryan. Keep up the AWESOME work my friend!!! 
+    <p class="right">-- Pierre P.</p>
+  </div>
+
+  <div class="message">
+    Dude... thank you so much. I landed a guest research position with professor BJ Fogg at Stanford using your techniques. I implemented your strategy and just started seeing the world in a different way. Before, I hid behind my computer screen. Now, I focus much more on being friends and helping people. My quality of life has increased by roughly 1,000%.    
+    <p class="right">-- Kevin R.</p>
+  </div>
+
+  <div class="message">
+    Possibly the best HTML/CSS course! Of the several HTML/CSS courses I've been working through, Ryan's easily ranks as one of the best. It isn't perfect, as nothing is perfect, but Ryan backs up his claim of truly understanding how one ought to teach. Anyone can be intimidated when learning new technologies, including me, and Ryan puts you at ease throughout the course.  
+    <p class="right">-- Justin J.</p>
+  </div>
+
+  <div class="message">
+    Cameron and Ryan you guys rock! Usually webinars are jam-packed with salesy techniques, which yours had some but I really appreciated the time you took to actually give value with your demonstration as well as sitting around for another hour after to answer all of our questions. I'm sold! 
+    <p class="right">-- Jose Pablo G.</p>
+  </div>
+
+</div>
+
+<div id="past-talks">
+  <h2>And some past talks I've given...</h2>
+
+  <div class="talks">
+    <a class="no-underline" target="_blank" href="https://www.startupgrind.com/events/details/startup-grind-tallahassee-hosted-ryan-bonhardt-maker-based">
+      <div class="talk">
+        <div class="overlay-container">
+          <img class="large" src="images/startup-grind.jpg" alt="Developing The Habit Of Seeing Awesome" title="Developing The Habit Of Seeing Awesome">
+          <p class="description">Startup Grind is a global startup community designed to educate, inspire, and connect entrepreneurs. I talked at Startup Grind about my experience as an entrepreneur and the direction I saw online education going. </p>
+        </div>
+        <p class="lead">Startup Grind</p>
+      </div>
+    </a>
+    <a class="no-underline" target="_blank" href="https://www.youtube.com/watch?v=pWytjgAcTqU&list=PLSak_q1UXfPo3jSBiWoamMMYxz4okp1F3">
+      <div class="talk">
+        <div class="overlay-container">
+          <img class="large" src="images/california.jpg" alt="Land A Job You love" title="Land A Job You love">
+          <p class="description">In 2015 I taught a week-long course to educators from across California in Fresno about how to effectively teach their students HTML and CSS. This is a clip from that week-long session.</p>
+        </div>
+        <p class="lead">Summer Web Development Bootcamp</p>
+      </div>
+    </a>
+    <a class="no-underline" target="_blank" href="https://docs.google.com/presentation/d/1nDsfu1uQI--zHGaWbLYnpqRClBHjzcBO3qWBOU7tD4k/edit?usp=sharing">
+      <div class="talk">
+        <div class="overlay-container">
+          <img class="large outline" src="images/skill-acquisition.jpg" alt="Maker-Based Education" title="Maker-Based Education">
+          <p class="description">New Rules aims at teaching young-professionals and athletes to be successful in the real world. Here are the slides from one of the two classes I taught on learning how to learn and how to create opportunies with people.</p>
+        </div>
+        <p class="lead">New Rules</p>
+      </div>
+    </a>
+  </div>
+
+  
+
+  <p>Thanks for stopping by. If you enjoy my work and are looking to get ahold of me you can do that <a data-cke-saved-href="mailto:rbonhardt@gmail.com" href="mailto:rbonhardt@gmail.com">here</a>.</p>
+
+  <p>Ryan</p>
+</div>
+
+<div class="footer">
+  <p>Designed and Coded by © Ryan Bonhardt, 2020</p>
 </div>
